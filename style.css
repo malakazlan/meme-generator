@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Center the meme generator */
+  .meme-generator {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    height: fit-content;
+  }
+  
+  /* Style the button */
+  .meme-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #FF4500; /* Or any color you prefer */
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .meme-btn:hover {
+    background-color: #FF6347; /* Slightly different shade on hover */
+  }
+  
+  /* Style the loading text */
+  .meme-title {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Add animation to the loading text */
+  @keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+  
+  .meme-title.loading {
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Style the meme image */
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the meme author section */
+  .meme-author {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #777;
+  }
+  
+  /* Add some responsiveness for smaller screens */
+  @media (max-width: 480px) {
+    .meme-btn {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+    .meme-title {
+      font-size: 20px;
+    }
+    .meme-author {
+      font-size: 14px;
+    }
+  }
+  
